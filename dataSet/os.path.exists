@@ -1,0 +1,6 @@
+import os
+
+if not os.path.exists(dataSetPath):
+    print(f"Error: The directory {dataSetPath} does not exist.")
+else:
+    faces, ids = getImagesAndLabels(dataSetPath)
